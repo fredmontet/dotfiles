@@ -10,6 +10,9 @@ brew 'pyenv'
 brew 'readline'
 brew 'xz'
 
+# Javascript
+brew 'yarn'
+
 # CLI Utilities
 brew 'coreutils'
 brew 'curl'
@@ -25,7 +28,7 @@ brew 'zsh'
 # Softwares
 cask 'dash'
 cask 'dropbox'
-cash 'figma'
+cask 'figma'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'google-drive-file-stream'
@@ -38,6 +41,7 @@ cask 'notion'
 cask 'slack'
 cask 'sourcetree'
 cask 'spectacle'
+cask 'spotify'
 cask 'sublime-text'
 cask 'telegram-desktop'
 cask 'vlc'
