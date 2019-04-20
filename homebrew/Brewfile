@@ -13,6 +13,9 @@ brew 'xz'
 # Javascript
 brew 'yarn'
 
+# Java
+cask 'java'
+
 # CLI Utilities
 brew 'coreutils'
 brew 'curl'
