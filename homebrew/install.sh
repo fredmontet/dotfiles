@@ -9,16 +9,19 @@
 if test ! $(which brew)
 then
   echo "› Installing Homebrew for you."
-
-  # Install the correct homebrew for each OS type
-  if test "$(uname)" = "Darwin"
-  then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  elif test "$(expr substr $(uname -s) 1 5)" = "Linux"
-  then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
-  fi
-
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-exit 0
+# Run Homebrew through the Brewfile
+# Set global packages
+requirements=$ZSH/homebrew/Brewfile
+
+# Upgrade homebrew
+echo "› brew update"
+brew update
+echo "Packages installed!"
+
+# Install new softwares if needed
+echo "› brew bundle"
+brew bundle --file=$requirements
+echo "All packages installed!"
