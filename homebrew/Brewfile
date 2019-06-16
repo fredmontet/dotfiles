@@ -17,6 +17,7 @@ brew 'yarn'
 
 # Java
 cask 'java'
+brew 'maven'
 brew 'springboot'
 
 # CLI Utilities
