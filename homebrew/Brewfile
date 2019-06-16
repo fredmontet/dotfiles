@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 
 # Add taps
 tap 'caskroom/cask'
+tap 'pivotal/tap'
 
 # Python
 # (see https://github.com/pyenv/pyenv/wiki/Common-build-problems#prerequisites)
@@ -16,10 +17,12 @@ brew 'yarn'
 
 # Java
 cask 'java'
+brew 'springboot'
 
 # CLI Utilities
 brew 'coreutils'
 brew 'curl'
+brew 'heroku/brew/heroku'
 brew 'htop'
 brew 'httpie'
 brew 'iperf3'
