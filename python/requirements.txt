@@ -1,2 +1,11 @@
 jupyter
 jupyterlab
+h5py
+matplotlib
+numpy 
+pandas
+pyyaml
+scipy
+seaborn
+sympy
+tensorflow==2.0.0-alpha0
