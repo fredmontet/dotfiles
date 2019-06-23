@@ -20,6 +20,9 @@ cask 'java'
 brew 'maven'
 brew 'springboot'
 
+# Database
+brew 'postgresql'
+
 # CLI Utilities
 brew 'coreutils'
 brew 'curl'
@@ -28,6 +31,7 @@ brew 'htop'
 brew 'httpie'
 brew 'iperf3'
 brew 'mtr'
+cask 'ngrok'
 brew 'tree'
 brew 'wget'
 brew 'youtube-dl'
