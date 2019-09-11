@@ -1,6 +1,6 @@
 #!/bin/sh
 # Just a quick tool to take a note
-NOTE_PATH="/Users/fredmontet/Drive/project/note"
+NOTE_PATH="/Users/frederic.montet/Drive/project/note"
 EXT=".md"
 TMP_NOTE_PATH="tmp$EXT"
 
