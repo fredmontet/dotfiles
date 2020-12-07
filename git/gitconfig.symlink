@@ -15,7 +15,7 @@
         branch = auto
         ui = true
 [core]
-	excludesfile = /Users/fredmontet/.gitignore
+	excludesfile = /Users/frederic.montet/.gitignore_global
         editor = vim
 [apply]
         whitespace = nowarn
@@ -34,8 +34,8 @@
 [credential]
 	helper = osxkeychain
 [user]
-	name = Frédéric Montet
-	email = frederic.montet@vast.ch
+	name = Fred Montet
+	email = fredmontet@gmail.com
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

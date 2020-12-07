@@ -8,4 +8,5 @@ pyyaml
 scipy
 seaborn
 sympy
-tensorflow==2.0.0-alpha0
+tensorflow
+pytorch

@@ -1,6 +1,6 @@
 #!/bin/sh
 # Just a quick tool to take a note
-NOTE_PATH="/Users/frederic.montet/Drive/project/note"
+NOTE_PATH="/Volumes/GoogleDrive/My Drive/project/note"
 EXT=".md"
 TMP_NOTE_PATH="tmp$EXT"
 
@@ -9,18 +9,18 @@ NOW_REVERSE="$(date +'%y%m%d')"
 
 if [ ! -z "$1" ] && [ -z "$2" ] # If only one arg e.g. note topic
   then
-    FILENAME=$NOTE_PATH/$1$EXT
-    exec vim $FILENAME
+    FILENAME="$NOTE_PATH/$1$EXT"
+    exec vim "$FILENAME"
     exit 1
 elif [ ! -z "$1" ] && [ ! -z "$2" ] # If two args e.g. note topic <path>
    then
-    FILENAME=$2/$1$EXT
-	  exec vim $FILENAME
+    FILENAME="$2/$1$EXT"
+	  exec vim "$FILENAME"
     exit 1
 else # If no arg
-  FILENAME=$NOTE_PATH/tmp$EXT
+  FILENAME="$NOTE_PATH/tmp$EXT"
   #touch $FILENAME
   #echo "# note $NOW ==================================================================" >> $FILENAME
-	exec vim $FILENAME
+	exec vim "$FILENAME"
 	exit 1
 fi
