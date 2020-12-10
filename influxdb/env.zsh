@@ -1,1 +1,0 @@
-export INFLUX_TOKEN=w0gI5BzYHfz3v80a19HFBXGv5qDYyRpB6fm_x5nDsl_bwh9mCzQv6nbnFVKkKdSYuQC1lQ3Q4RLVq70ToKhglg==
