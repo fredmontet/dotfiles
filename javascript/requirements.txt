@@ -1,5 +1,3 @@
 npm
 yarn
-gatsby-cli
-netlify-cli
 prettier

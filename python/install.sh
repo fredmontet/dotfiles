@@ -5,7 +5,7 @@
 # Installation made with Pyenv
 
 # Set the desired Python versions
-python_3="3.7"
+python_3="3.8"
 
 # Set the default version
 default_ver=$python_3

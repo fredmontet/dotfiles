@@ -5,6 +5,9 @@ alias ...='cd ../..'
 
 alias cls='clear' # Good 'ol Clear Screen command
 
+# Create new datascience project 
+alias new-project-ds='cookiecutter https://github.com/drivendata/cookiecutter-data-science'
+
 # Projects
 alias thesis='cd ~/src/heia-fr/thesis-report/ && code .'
 alias aa='cd ~/src/heia-fr/audit-arena && pipenv shell'

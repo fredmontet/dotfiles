@@ -1,12 +1,7 @@
 jupyter
-jupyterlab
-h5py
 matplotlib
 numpy 
 pandas
-pyyaml
 scipy
 seaborn
-sympy
-tensorflow
 pytorch
