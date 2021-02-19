@@ -35,6 +35,10 @@ brew 'tree'
 brew 'wget'
 brew 'zsh'
 
+# Libs
+brew 'openblas'
+brew 'lapack'
+
 # Softwares
 cask 'clamxav'
 cask 'dash'
