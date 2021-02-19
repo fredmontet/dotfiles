@@ -5,23 +5,18 @@
 # Installation made with Pyenv
 
 # Set the desired Python versions
-python_3="3.7.3"
-python_2="2.7.16"
-
-# Set the default version
-default_ver=$python_3
+python="3.8.7"
 
 # Set global packages
 requirements=$ZSH/python/requirements.txt
 
 # Install Python
 echo "› Installing Python"
-pyenv install --skip-existing $python_2
-pyenv install --skip-existing $python_3
+pyenv install --skip-existing $python
 
 # Set the default version
 echo "› Setting Python default version"
-pyenv global $default_ver
+pyenv global $python
 echo "Python default version is set to $default_ver"
 
 # Let pip be in its latest version
