@@ -1,9 +1,20 @@
+# Basic aliases
+###############
+
 alias reload='. ~/.zshrc'
 
 alias ..='cd ..'
 alias ...='cd ../..'
 
 alias cls='clear' # Good 'ol Clear Screen command
+
+# Software aliases
+##################
+
+alias lg='lazygit'
+
+# Project aliases
+#################
 
 # Vast Outdoor GmbH
 alias vast.v1='cd ~/src/vast-outdoor/vast-ch'
