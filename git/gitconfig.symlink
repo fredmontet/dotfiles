@@ -44,3 +44,5 @@
 	trustExitCode = true
 [commit]
 	template = /Users/fredmontet/.stCommitMsg
+[init]
+	defaultBranch = main
