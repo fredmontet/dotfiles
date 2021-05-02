@@ -1,0 +1,45 @@
+#!/bin/sh
+
+# Note
+# ====
+
+# A quick tool to take a note
+
+EDITOR=vim
+EXT=".md"
+
+NOTE_PATH="/Users/frederic.montet/src/project/note"
+NOTE_PATH_PRIVATE="$NOTE_PATH/private"
+
+TMP_NOTE_PATH="$NOTE_PATH/tmp$EXT"
+TMP_NOTE_PATH_PRIVATE="$PRIVATE_NOTE_PATH/tmp$EXT"
+
+if [ -n "$1" ] && [ -z "$2" ]; then
+  if [[ "$1" == '-p' ]]; then
+    # Write private temporary note 
+    #   Usage: note -p
+    exec $EDITOR $TMP_NOTE_PATH_PRIVATE 
+
+  elif [[ "$1" == '-l' ]]; then
+    # List all notes (also private ones) 
+    #   Usage: note -l
+    exec tree -L 2 $NOTE_PATH
+
+  else
+    # Write public note
+    #   Usage: note <topic>
+    exec $EDITOR $NOTE_PATH/$1$EXT
+  fi
+
+# Write private note
+#   Usage: note -p <topic>
+elif [ -n "$1" ] && [ -n "$2" ]; then
+  if [[ "$1" == '-p' ]]; then
+    exec $EDITOR $NOTE_PATH_PRIVATE/$2$EXT 
+  fi
+  
+# Write temporary note
+#   Usage: note
+else
+	exec $EDITOR $TMP_NOTE_PATH
+fi
